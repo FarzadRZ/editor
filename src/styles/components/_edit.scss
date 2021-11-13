@@ -1,0 +1,43 @@
+.edit {
+    overflow: hidden;
+    
+    &__heading {
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        background: #2c3e50;
+        border-bottom: 2px solid #ffffff33;
+
+        &-btn {
+            color: #ffffffe6;
+            padding: 0 15px;
+            cursor: pointer;
+            font-size: 16px;
+
+            &:nth-child(1) {
+                border-right: 1px solid #ffffff33;
+            }
+        }
+    }
+
+    &__body {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .CodeMirror {
+            width: calc(100% / 3 - 5px);
+            background-color: #38434f !important;
+
+            .CodeMirror-gutters {
+                background-color: #38434f !important;
+                border-right: 1px solid #ffffff33;
+            }
+        }
+    }
+}

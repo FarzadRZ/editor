@@ -1,0 +1,45 @@
+.setting {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background: #2c3e50;
+
+    &__dropdown {
+        margin-right: 15px;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-size: 16px;
+        border: 1px solid #ffffff33;
+        color: #ffffffe6;
+        background: #38434f;
+        cursor: pointer;
+    }
+
+    &__btn {
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-size: 16px;
+        border: 1px solid #ffffff33;
+        color: #ffffffe6;
+        background: #38434f;
+        cursor: pointer;
+        height: 43px;
+    }
+
+    &__modal {
+        position: fixed;
+        height: 120px;
+        top: calc(50vh - 60px);
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 400px;
+        background: #fff;
+        padding: 50px;
+        z-index: 1000;
+        border-radius: 5px;
+        box-shadow: rgb(0 0 0 / 20%) 0px 0px 5px;
+    }
+}
